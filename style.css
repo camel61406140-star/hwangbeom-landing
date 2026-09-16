@@ -150,14 +150,20 @@ section h2 {
 }
 
 .story p, .process p, .urgency p { color: var(--ink-soft); font-size: 16px; }
+.quote-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 .story .quote {
   background: var(--bg-alt);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 20px 24px;
   font-weight: 700;
   color: var(--ink);
   font-size: 16px;
-  margin-bottom: 40px;
+  text-align: center;
+  margin: 0;
 }
 .story h2 { margin-top: 8px; }
 .story .quote-sub {
@@ -203,7 +209,7 @@ section h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 80px;
   margin: 120px 0 8px;
 }
 .story-final .char-avatar { margin: 0; flex-shrink: 0; }
@@ -536,6 +542,40 @@ section h2 {
   font-size: 13px;
   color: var(--ink-soft);
   opacity: 0.75;
+}
+
+/* Scroll-in reveal animations */
+.reveal, .reveal-left, .reveal-right, .reveal-scale {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+.reveal { opacity: 0; transform: translateY(26px); }
+.reveal-left { opacity: 0; transform: translateX(-56px); }
+.reveal-right { opacity: 0; transform: translateX(56px); }
+.reveal-scale { opacity: 0; transform: scale(0.88); }
+.reveal.visible, .reveal-left.visible, .reveal-right.visible, .reveal-scale.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.q-cards .q-card:nth-child(2) { transition-delay: 150ms; }
+.pitfall-cards .pitfall-card:nth-child(2) { transition-delay: 150ms; }
+.bubbles .bubble:nth-child(1) { transition-delay: 0ms; }
+.bubbles .bubble:nth-child(2) { transition-delay: 150ms; }
+.review-gallery img:nth-child(1) { transition-delay: 0ms; }
+.review-gallery img:nth-child(2) { transition-delay: 150ms; }
+.review-gallery img:nth-child(3) { transition-delay: 300ms; }
+.price-cards .price-card:nth-child(1) { transition-delay: 0ms; }
+.price-cards .price-card:nth-child(2) { transition-delay: 150ms; }
+.price-cards .price-card:nth-child(3) { transition-delay: 300ms; }
+.final-cta .cta-button { transition-delay: 150ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 @media (min-width: 640px) {
