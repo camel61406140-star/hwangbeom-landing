@@ -176,10 +176,11 @@ section h2 {
 /* Illustrated character accents (reused wherever a character image is inserted) */
 .char-avatar {
   display: block;
-  width: 180px;
-  height: 180px;
+  width: 152px;
+  height: 198px;
   object-fit: cover;
-  border-radius: 50%;
+  object-position: center 12%;
+  border-radius: 26px;
   margin: 40px auto;
   border: 3px solid var(--card-bg);
   box-shadow: 0 8px 20px rgba(44, 36, 34, 0.12);
@@ -291,10 +292,11 @@ section h2 {
 }
 .step-icon {
   display: block;
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 68px;
   object-fit: cover;
-  border-radius: 50%;
+  object-position: center 12%;
+  border-radius: 14px;
   margin: 0 auto 10px;
   border: 2px solid var(--card-bg);
   box-shadow: 0 4px 10px rgba(44, 36, 34, 0.12);
