@@ -73,18 +73,21 @@ p { margin: 0 0 16px; }
 .q-cards {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: center;
+  gap: 16px;
   margin-bottom: 32px;
 }
 .q-card {
+  position: relative;
   background: var(--card-bg);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 20px;
+  border-radius: 22px 22px 22px 6px;
+  box-shadow: 0 8px 20px rgba(44, 36, 34, 0.10);
+  padding: 22px 20px;
   font-size: 17px;
   font-weight: 700;
   color: var(--accent-dark);
 }
+.q-card:nth-child(2) { border-radius: 22px 22px 6px 22px; }
 
 .cta-button {
   display: inline-block;
@@ -150,10 +153,9 @@ section h2 {
   font-weight: 700;
   color: var(--ink);
   font-size: 15px;
+  margin-bottom: 40px;
 }
-.story h2 { margin-top: 40px; }
-.story-block { margin-bottom: 24px; }
-.story-block:last-of-type { margin-bottom: 32px; }
+.story h2 { margin-top: 8px; }
 .story .quote-sub {
   display: inline-block;
   margin-top: 6px;
@@ -165,7 +167,28 @@ section h2 {
   border: none;
   border-top: 1px solid var(--line);
   width: 60px;
-  margin: 36px auto;
+  margin: 8px auto 40px;
+}
+
+/* Generously-spaced narrative paragraphs (empathy + story) */
+.flow { margin-bottom: 40px; }
+
+/* Customer-quote speech bubbles */
+.bubbles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 40px;
+}
+.bubble {
+  background: var(--bg-alt);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 18px;
+  border-radius: 18px 18px 18px 4px;
+  max-width: 92%;
 }
 
 /* Services */
@@ -373,5 +396,6 @@ section h2 {
 @media (min-width: 640px) {
   .hero h1 { font-size: 36px; }
   .q-cards { flex-direction: row; }
+  .q-card { flex: 0 1 260px; }
   section h2 { font-size: 28px; }
 }
