@@ -32,7 +32,7 @@ body {
   background: var(--ink);
   color: #f4e9e1;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px 16px;
   letter-spacing: 0.01em;
 }
@@ -60,7 +60,7 @@ p { margin: 0 0 16px; }
   margin-bottom: 14px;
 }
 .hello {
-  font-size: 17px;
+  font-size: 18px;
   color: var(--ink-soft);
   margin-bottom: 40px;
 }
@@ -83,7 +83,7 @@ p { margin: 0 0 16px; }
   border-radius: 22px 22px 22px 6px;
   box-shadow: 0 8px 20px rgba(44, 36, 34, 0.10);
   padding: 22px 20px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--accent-dark);
 }
@@ -97,7 +97,7 @@ p { margin: 0 0 16px; }
   color: #fff;
   text-decoration: none;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 19px;
   letter-spacing: 0.1em;
   padding: 16px 32px;
   border-radius: 999px;
@@ -120,13 +120,13 @@ section h2 {
 }
 
 .empathy { background: var(--bg-alt); }
-.empathy p { text-align: center; color: var(--ink-soft); font-size: 15px; }
+.empathy p { text-align: center; color: var(--ink-soft); font-size: 16px; }
 .empathy .highlight {
   color: var(--ink);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
 }
-.empathy .conclusion { font-size: 17px; }
+.empathy .conclusion { font-size: 18px; margin-top: 80px; }
 
 .pitfall-cards {
   display: flex;
@@ -135,27 +135,27 @@ section h2 {
 }
 .pitfall-card {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--card-bg);
   border-radius: var(--radius);
-  padding: 20px 16px;
+  padding: 28px 16px;
   text-align: center;
   border: 1px solid var(--line);
-}
-.pitfall-card h3 {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 800;
   color: var(--accent-dark);
-  margin-bottom: 8px;
 }
-.pitfall-card p { font-size: 14px; margin: 0; color: var(--ink-soft); }
 
-.story p, .process p, .urgency p { color: var(--ink-soft); font-size: 15px; }
+.story p, .process p, .urgency p { color: var(--ink-soft); font-size: 16px; }
 .story .quote {
   background: var(--bg-alt);
   border-radius: var(--radius);
   padding: 20px;
   font-weight: 700;
   color: var(--ink);
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 40px;
 }
 .story h2 { margin-top: 8px; }
@@ -163,7 +163,7 @@ section h2 {
   display: inline-block;
   margin-top: 6px;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--ink-soft);
 }
 .story-hr {
@@ -180,7 +180,7 @@ section h2 {
   height: 168px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 40px auto;
+  margin: 120px auto;
   box-shadow: 0 8px 16px rgba(44, 36, 34, 0.14);
 }
 
@@ -192,7 +192,7 @@ section h2 {
   object-fit: cover;
   object-position: center 12%;
   border-radius: 26px;
-  margin: 40px auto;
+  margin: 120px auto;
   border: 3px solid var(--card-bg);
   box-shadow: 0 8px 20px rgba(44, 36, 34, 0.12);
 }
@@ -223,7 +223,7 @@ section h2 {
   background: var(--bg-alt);
   color: var(--ink);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   padding: 14px 18px;
   border-radius: 18px 18px 18px 4px;
   max-width: 92%;
@@ -252,18 +252,18 @@ section h2 {
   border-radius: 50%;
   margin-bottom: 10px;
 }
-.service-card h3 { font-size: 20px; margin-bottom: 10px; }
+.service-card h3 { font-size: 21px; margin-bottom: 10px; }
 .service-question {
   font-weight: 700;
   color: var(--accent-dark);
-  font-size: 15px;
+  font-size: 16px;
 }
-.service-desc { color: var(--ink-soft); font-size: 14px; }
+.service-desc { color: var(--ink-soft); font-size: 15px; }
 .service-card ul {
   margin: 0 0 16px;
   padding-left: 20px;
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: 15px;
 }
 .service-card li { margin-bottom: 6px; }
 .service-split {
@@ -277,10 +277,10 @@ section h2 {
   border-radius: 14px;
   padding: 14px;
 }
-.service-split h4 { font-size: 14px; margin-bottom: 6px; color: var(--accent-dark); }
-.service-split p { font-size: 13px; margin: 0; color: var(--ink-soft); }
+.service-split h4 { font-size: 15px; margin-bottom: 6px; color: var(--accent-dark); }
+.service-split p { font-size: 14px; margin: 0; color: var(--ink-soft); }
 .service-summary {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--ink);
   margin: 0;
@@ -331,24 +331,24 @@ section h2 {
   font-weight: 800;
   margin-bottom: 10px;
 }
-.step p { font-size: 13px; margin: 0; color: var(--ink-soft); }
-.step small { font-size: 11px; opacity: 0.8; }
+.step p { font-size: 14px; margin: 0; color: var(--ink-soft); }
+.step small { font-size: 12px; opacity: 0.8; }
 
-.process h2 { margin-bottom: 40px; }
+.process h2 { margin-bottom: 120px; }
 .not-list {
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: 15px;
   border-left: 3px solid var(--line);
   padding-left: 16px;
   margin-bottom: 40px;
 }
-.process .conclusion { text-align: center; font-size: 16px; }
+.process .conclusion { text-align: center; font-size: 17px; }
 
 /* Reviews */
 .review-heading {
   text-align: center;
-  font-size: 21px;
-  margin-bottom: 12px;
+  font-size: 22px;
+  margin: 80px 0 92px;
 }
 .review-gallery {
   display: flex;
@@ -396,7 +396,7 @@ section h2 {
 .pricing-note {
   text-align: center;
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 40px;
 }
 .price-cards {
@@ -411,7 +411,7 @@ section h2 {
   padding: 24px;
   text-align: center;
 }
-.price-card h3 { font-size: 16px; margin-bottom: 10px; }
+.price-card h3 { font-size: 17px; margin-bottom: 10px; }
 .price-card .price {
   font-size: 26px;
   font-weight: 800;
@@ -419,13 +419,13 @@ section h2 {
   margin: 0 0 8px;
 }
 .price-card .price-old {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--ink-soft);
   text-decoration: line-through;
   margin: 0 0 2px;
 }
 .price-card .price-desc {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--ink-soft);
   margin: 0;
 }
@@ -458,6 +458,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 96px;
 }
 .title-icon {
   width: 1.15em;
@@ -467,14 +468,14 @@ section h2 {
 }
 .urgency p { text-align: center; }
 .small-note {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink-soft);
   opacity: 0.55;
 }
 .urgency .emphasis-line {
   margin-top: 120px;
   font-weight: 800;
-  font-size: 17px;
+  font-size: 18px;
   color: var(--accent-dark);
 }
 .urgency-box {
@@ -486,18 +487,18 @@ section h2 {
   margin-top: 24px;
 }
 .deadline {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 800;
   color: var(--accent-dark);
   margin-bottom: 4px;
 }
 .limit {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 .fine-print {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink-soft);
   margin: 0;
 }
@@ -512,7 +513,7 @@ section h2 {
 .final-cta h2 { margin-bottom: 24px; }
 .footer-note {
   margin-top: 28px;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink-soft);
   opacity: 0.75;
 }
