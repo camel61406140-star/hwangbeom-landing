@@ -351,15 +351,14 @@ section h2 {
   margin-bottom: 12px;
 }
 .review-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .review-gallery img {
+  display: block;
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: top;
+  height: auto;
   border-radius: 14px;
   border: 1px solid var(--line);
   box-shadow: 0 4px 10px rgba(44, 36, 34, 0.08);
