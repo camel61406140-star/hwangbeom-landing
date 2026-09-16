@@ -151,6 +151,22 @@ section h2 {
   color: var(--ink);
   font-size: 15px;
 }
+.story h2 { margin-top: 40px; }
+.story-block { margin-bottom: 24px; }
+.story-block:last-of-type { margin-bottom: 32px; }
+.story .quote-sub {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.story-hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  width: 60px;
+  margin: 36px auto;
+}
 
 /* Services */
 .services { background: var(--bg-alt); }
