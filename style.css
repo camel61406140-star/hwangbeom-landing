@@ -283,6 +283,7 @@ section h2 {
   font-size: 14px;
   border-left: 3px solid var(--line);
   padding-left: 16px;
+  margin-bottom: 40px;
 }
 .process .conclusion { text-align: center; font-size: 16px; }
 
@@ -292,7 +293,7 @@ section h2 {
   text-align: center;
   color: var(--ink-soft);
   font-size: 14px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 .price-cards {
   display: flex;
@@ -352,7 +353,7 @@ section h2 {
 .small-note {
   font-size: 12px;
   color: var(--ink-soft);
-  opacity: 0.8;
+  opacity: 0.55;
 }
 .urgency-box {
   background: var(--card-bg);
