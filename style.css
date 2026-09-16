@@ -170,6 +170,18 @@ section h2 {
   margin: 8px auto 40px;
 }
 
+/* Illustrated character accents (reused wherever a character image is inserted) */
+.char-avatar {
+  display: block;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 3px solid var(--card-bg);
+  box-shadow: 0 8px 20px rgba(44, 36, 34, 0.12);
+}
+
 /* Generously-spaced narrative paragraphs (empathy + story) */
 .flow { margin-bottom: 40px; }
 
