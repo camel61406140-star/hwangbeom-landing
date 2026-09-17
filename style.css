@@ -422,13 +422,15 @@ section h2 {
 
 /* Pricing */
 .pricing h2, .urgency h2 { text-align: center; }
-.pricing h2 { margin-bottom: 40px; }
+.pricing h2 { margin-bottom: 64px; }
 .pricing-note {
   text-align: center;
-  color: var(--ink-soft);
-  font-size: 15px;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 18px;
   margin-bottom: 40px;
 }
+.pricing-note:last-of-type { margin-bottom: 64px; }
 .price-cards {
   display: flex;
   flex-direction: column;
@@ -541,6 +543,13 @@ section h2 {
   padding-bottom: 56px;
 }
 .final-cta h2 { margin-bottom: 24px; }
+.cta-secondary { margin-top: 160px; }
+.cta-label {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
 .footer-note {
   margin-top: 28px;
   font-size: 13px;
