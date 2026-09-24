@@ -244,7 +244,7 @@ section h2 {
 .bubble-highlight-wrap {
   display: flex;
   justify-content: center;
-  margin: 0 0 40px;
+  margin: 160px 0 40px;
 }
 .bubble-highlight {
   background: var(--accent);
