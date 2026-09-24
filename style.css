@@ -319,8 +319,30 @@ section h2 {
 }
 
 /* Report sample carousel */
+.report-sample { padding-top: 112px; }
 .report-sample h2 { margin-bottom: 40px; }
 .report-sample p { color: var(--ink-soft); font-size: 16px; text-align: center; }
+.report-review { margin-top: 72px; text-align: center; }
+.report-sample .report-review-label {
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.report-review img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 16px rgba(44, 36, 34, 0.12);
+  cursor: zoom-in;
+}
+.report-sample .report-review-guarantee {
+  font-size: 13px;
+  color: var(--ink-soft);
+  opacity: 0.7;
+  margin: 14px 0 0;
+}
 .carousel-wrap {
   position: relative;
   margin: 8px 0 24px;
