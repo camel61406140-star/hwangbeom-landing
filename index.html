@@ -163,6 +163,34 @@
     </div>
   </section>
 
+  <section class="report-sample">
+    <div class="container narrow">
+      <h2 class="reveal">리포트는 이렇게 나갑니다</h2>
+      <p class="flow reveal">신청자 한 분의 사연을 직접 읽고<br>분석한 내용을 PDF 리포트로 정리해드립니다.</p>
+
+      <div class="carousel-wrap reveal">
+        <button class="carousel-btn prev" type="button" onclick="slideReport(-1)" aria-label="이전 페이지">&lsaquo;</button>
+        <div class="carousel" id="reportCarousel">
+          <img src="images/report-01.jpg" alt="리포트 예시 1페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-02.jpg" alt="리포트 예시 2페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-03.jpg" alt="리포트 예시 3페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-04.jpg" alt="리포트 예시 4페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-05.jpg" alt="리포트 예시 5페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-06.jpg" alt="리포트 예시 6페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-07.jpg" alt="리포트 예시 7페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-08.jpg" alt="리포트 예시 8페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-09.jpg" alt="리포트 예시 9페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-10.jpg" alt="리포트 예시 10페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-11.jpg" alt="리포트 예시 11페이지" loading="lazy" onclick="openLightbox(this.src)" />
+          <img src="images/report-12.jpg" alt="리포트 예시 12페이지" loading="lazy" onclick="openLightbox(this.src)" />
+        </div>
+        <button class="carousel-btn next" type="button" onclick="slideReport(1)" aria-label="다음 페이지">&rsaquo;</button>
+      </div>
+
+      <p class="carousel-note">실제로 발송된 리포트입니다.<br>신청자분의 개인정보 보호를 위해 본문은 가려두었습니다.</p>
+    </div>
+  </section>
+
   <section class="process">
     <div class="container narrow">
       <img class="char-avatar-card" src="images/char-8.png" alt="캐릭터" loading="lazy" />
@@ -302,6 +330,14 @@
       revealTargets.forEach(function (el) { revealObserver.observe(el); });
     } else {
       revealTargets.forEach(function (el) { el.classList.add('visible'); });
+    }
+
+    function slideReport(direction) {
+      var carousel = document.getElementById('reportCarousel');
+      var card = carousel.querySelector('img');
+      if (!card) return;
+      var step = card.offsetWidth + 12;
+      carousel.scrollBy({ left: step * direction, behavior: 'smooth' });
     }
 
     /* --- 방문자 행동 추적 (Google Analytics) --- */
