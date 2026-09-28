@@ -246,14 +246,10 @@ section h2 {
   margin: 0 0 40px;
 }
 .bubbles.bubbles-center { align-items: center; }
-.bubbles.bubbles-center .bubble {
-  text-align: center;
+.bubbles.bubbles-center .bubble { text-align: center; }
+.bubble {
   background: #fee500;
   color: #000000;
-}
-.bubble {
-  background: var(--bg-alt);
-  color: var(--ink);
   font-weight: 700;
   font-size: 16px;
   padding: 14px 18px;
