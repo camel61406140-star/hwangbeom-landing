@@ -614,14 +614,14 @@ section h2 {
   background: var(--accent-purple);
   color: #fff;
   font-weight: 800;
-  font-size: 14px;
-  padding: 6px 16px;
+  font-size: 16px;
+  padding: 8px 20px;
   border-radius: 999px;
   margin: 0 0 24px;
 }
 .guarantee-box p.flow {
   color: var(--ink-soft);
-  font-size: 16px;
+  font-size: 18px;
 }
 .guarantee-highlight {
   color: var(--accent-purple);
@@ -629,6 +629,7 @@ section h2 {
   font-size: 18px;
   margin: 0;
 }
+.guarantee-highlight-ink { color: var(--ink); }
 .final-cta h2 { margin-bottom: 24px; }
 .cta-secondary-note {
   margin-top: 32px;
