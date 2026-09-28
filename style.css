@@ -8,7 +8,7 @@
   --card-bg: #ffffff;
   --line: #e7dcd3;
   --radius: 18px;
-  --accent-purple: #6f42c1;
+  --accent-purple: #4c2889;
 }
 
 * { box-sizing: border-box; }
@@ -639,18 +639,14 @@ section h2 {
   padding-bottom: 56px;
 }
 .final-cta h2 { margin-bottom: 24px; }
-.cta-secondary { margin-top: 160px; }
-.cta-label {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin-bottom: 24px;
-}
-.footer-note {
-  margin-top: 28px;
-  font-size: 13px;
+.cta-secondary-note {
+  margin-top: 32px;
+  font-size: 14px;
   color: var(--ink-soft);
-  opacity: 0.75;
+}
+.cta-secondary-note a {
+  color: var(--ink-soft);
+  text-decoration: underline;
 }
 
 /* Scroll-in reveal animations */
