@@ -8,6 +8,7 @@
   --card-bg: #ffffff;
   --line: #e7dcd3;
   --radius: 18px;
+  --accent-purple: #6f42c1;
 }
 
 * { box-sizing: border-box; }
@@ -221,6 +222,21 @@ section h2 {
 /* Generously-spaced narrative paragraphs (empathy + story) */
 .flow { margin-bottom: 40px; }
 
+/* Hero hook line above the review screenshots */
+.flow.lead-line {
+  font-size: 19px;
+  margin: 80px 0 120px;
+}
+
+/* Hero counselor-intro paragraphs */
+.flow.bio-line { font-size: 18px; }
+.flow.bio-first { margin-top: 120px; }
+.flow.bio-last { margin-bottom: 160px; }
+.accent-purple {
+  color: var(--accent-purple);
+  font-weight: 800;
+}
+
 /* Customer-quote speech bubbles */
 .bubbles {
   display: flex;
@@ -229,6 +245,8 @@ section h2 {
   gap: 10px;
   margin: 0 0 40px;
 }
+.bubbles.bubbles-center { align-items: center; }
+.bubbles.bubbles-center .bubble { text-align: center; }
 .bubble {
   background: var(--bg-alt);
   color: var(--ink);
@@ -685,4 +703,7 @@ section h2 {
 
   .carousel-btn { display: block; }
   .carousel img { width: 46%; }
+
+  .intro-reviews { flex-direction: row; }
+  .intro-reviews img { width: auto; flex: 1 1 0; min-width: 0; }
 }
