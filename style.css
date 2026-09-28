@@ -159,12 +159,6 @@ section h2 {
   font-size: 14px;
   color: var(--ink-soft);
 }
-.story-hr {
-  border: none;
-  border-top: 1px solid var(--line);
-  width: 60px;
-  margin: 8px auto 40px;
-}
 
 /* Illustrated character accents: pre-circled stickers (own white ring baked in) */
 .char-avatar {
@@ -194,6 +188,11 @@ section h2 {
 .flow { margin-bottom: 40px; }
 .flow.text-lg { font-size: 18px; }
 .flow.gap-lg { margin-bottom: 80px; }
+.flow.made-it-line {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--accent-purple);
+}
 
 /* Hero hook line above the review screenshots */
 .flow.lead-line {
@@ -219,6 +218,7 @@ section h2 {
   gap: 10px;
   margin: 0 0 40px;
 }
+.bubbles.bubbles-spread { gap: 50px; }
 .bubbles.bubbles-center { align-items: center; margin-bottom: 96px; }
 .bubbles.bubbles-center .bubble { text-align: center; }
 .bubbles.bubbles-gap { margin-bottom: 120px; }
@@ -293,7 +293,7 @@ section h2 {
 .report-sample { padding-top: 112px; }
 .report-sample h2 { margin-bottom: 40px; }
 .report-sample p { color: var(--ink-soft); font-size: 16px; text-align: center; }
-.report-review { margin-top: 72px; text-align: center; }
+.report-review { margin-top: 152px; text-align: center; }
 .report-sample .report-review-label {
   font-weight: 800;
   font-size: 17px;
@@ -372,7 +372,7 @@ section h2 {
 .steps {
   display: flex;
   gap: 12px;
-  margin: 32px 0;
+  margin: 112px 0;
 }
 .step {
   flex: 1;
