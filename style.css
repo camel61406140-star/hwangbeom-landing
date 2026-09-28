@@ -479,6 +479,7 @@ section h2 {
 }
 
 /* Pricing */
+.pricing { padding-top: 128px; }
 .pricing h2, .urgency h2 { text-align: center; }
 .pricing h2 { margin-bottom: 64px; }
 .pricing-note {
