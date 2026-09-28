@@ -231,6 +231,7 @@ section h2 {
   border-radius: 18px 18px 18px 4px;
   max-width: 92%;
 }
+.bubble.bubble-lg { font-size: 18px; }
 
 /* Services */
 .services { background: var(--bg-alt); }
@@ -255,35 +256,37 @@ section h2 {
   border-radius: 50%;
   margin-bottom: 10px;
 }
-.service-card h3 { font-size: 21px; margin-bottom: 10px; }
+.service-card h3 { font-size: 21px; margin-bottom: 14px; }
 .service-question {
   font-weight: 700;
   color: var(--accent-dark);
-  font-size: 16px;
+  font-size: 17px;
+  margin-bottom: 20px;
 }
-.service-desc { color: var(--ink-soft); font-size: 15px; }
+.service-desc { color: var(--ink-soft); font-size: 17px; margin-bottom: 20px; }
 .service-card ul {
-  margin: 0 0 16px;
+  margin: 0 0 24px;
   padding-left: 20px;
   color: var(--ink-soft);
-  font-size: 15px;
+  font-size: 17px;
 }
-.service-card li { margin-bottom: 6px; }
-.service-split { margin-bottom: 16px; }
+.service-card li { margin-bottom: 12px; }
+.service-card li:last-child { margin-bottom: 0; }
+.service-split { margin-bottom: 20px; }
 .service-split p {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--ink-soft);
-  margin: 0 0 14px;
+  margin: 0 0 20px;
 }
 .service-split p:last-child { margin-bottom: 0; }
 .service-split strong { color: var(--accent-dark); }
 .service-summary {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--ink);
   margin: 0;
   border-top: 1px solid var(--line);
-  padding-top: 14px;
+  padding-top: 18px;
 }
 
 /* Report sample carousel */
