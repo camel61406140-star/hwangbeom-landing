@@ -188,6 +188,7 @@ section h2 {
 .flow { margin-bottom: 40px; }
 .flow.text-lg { font-size: 18px; }
 .flow.gap-lg { margin-bottom: 80px; }
+.flow.mt-lg { margin-top: 120px; }
 .flow.made-it-line {
   font-size: 24px;
   font-weight: 800;
@@ -427,7 +428,7 @@ section h2 {
 /* Reviews */
 .review-heading {
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
   margin: 120px 0 40px;
 }
 .review-gallery {
