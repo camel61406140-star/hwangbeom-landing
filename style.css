@@ -79,6 +79,10 @@ p { margin: 0 0 16px; }
 }
 .q-card {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: var(--card-bg);
   border-radius: 22px 22px 22px 6px;
   box-shadow: 0 8px 20px rgba(44, 36, 34, 0.10);
