@@ -198,14 +198,14 @@ section h2 {
 /* Hero hook line above the review screenshots */
 .flow.lead-line {
   font-size: 19px;
-  margin: 80px 0 120px;
+  margin: 160px 0 120px;
 }
 
 /* Hero counselor-intro paragraphs */
 .flow.bio-line { font-size: 18px; }
-.flow.bio-first { margin-top: 120px; margin-bottom: 56px; }
-.flow.bio-line:not(.bio-first):not(.bio-last) { margin-bottom: 56px; }
-.flow.bio-last { margin-bottom: 64px; }
+.flow.bio-first { margin-top: 160px; margin-bottom: 96px; }
+.flow.bio-line:not(.bio-first):not(.bio-last) { margin-bottom: 96px; }
+.flow.bio-last { margin-bottom: 104px; }
 .accent-purple {
   color: var(--accent-purple);
   font-weight: 800;
@@ -219,7 +219,7 @@ section h2 {
   gap: 10px;
   margin: 0 0 40px;
 }
-.bubbles.bubbles-center { align-items: center; margin-bottom: 56px; }
+.bubbles.bubbles-center { align-items: center; margin-bottom: 96px; }
 .bubbles.bubbles-center .bubble { text-align: center; }
 .bubbles.bubbles-gap { margin-bottom: 120px; }
 .bubble {
