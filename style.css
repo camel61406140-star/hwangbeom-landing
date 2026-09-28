@@ -193,6 +193,7 @@ section h2 {
 /* Generously-spaced narrative paragraphs (empathy + story) */
 .flow { margin-bottom: 40px; }
 .flow.text-lg { font-size: 18px; }
+.flow.gap-lg { margin-bottom: 80px; }
 
 /* Hero hook line above the review screenshots */
 .flow.lead-line {
