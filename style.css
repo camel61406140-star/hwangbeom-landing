@@ -132,6 +132,12 @@ section h2 {
   font-size: 19px;
 }
 .empathy .gap-lg { margin-bottom: 80px; }
+.accent-red { color: var(--accent); }
+.empathy .pitfall-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accent);
+}
 .empathy .conclusion { font-size: 19px; margin-top: 80px; }
 
 
@@ -189,6 +195,7 @@ section h2 {
 .flow.text-lg { font-size: 18px; }
 .flow.gap-lg { margin-bottom: 80px; }
 .flow.mt-lg { margin-top: 120px; }
+.flow.mt-md { margin-top: 80px; }
 .flow.made-it-line {
   font-size: 24px;
   font-weight: 800;
@@ -219,7 +226,7 @@ section h2 {
   gap: 10px;
   margin: 0 0 40px;
 }
-.bubbles.bubbles-spread { gap: 50px; }
+.bubbles.bubbles-spread { gap: 25px; }
 .bubbles.bubbles-center { align-items: center; margin-bottom: 96px; }
 .bubbles.bubbles-center .bubble { text-align: center; }
 .bubbles.bubbles-gap { margin-bottom: 120px; }
@@ -592,6 +599,34 @@ section h2 {
   background: var(--bg-alt);
   padding-top: 96px;
   padding-bottom: 56px;
+}
+.guarantee-box {
+  background: var(--card-bg);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+  margin-bottom: 96px;
+}
+.guarantee-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin: 0 0 24px;
+}
+.guarantee-box p.flow {
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+.guarantee-highlight {
+  color: var(--accent-dark);
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
 }
 .final-cta h2 { margin-bottom: 24px; }
 .cta-secondary-note {
