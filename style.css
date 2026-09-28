@@ -125,13 +125,14 @@ section h2 {
 }
 
 .empathy { background: var(--bg-alt); }
-.empathy p { text-align: center; color: var(--ink-soft); font-size: 16px; }
+.empathy p { text-align: center; color: var(--ink-soft); font-size: 18px; }
 .empathy .highlight {
   color: var(--ink);
   font-weight: 700;
-  font-size: 17px;
+  font-size: 19px;
 }
-.empathy .conclusion { font-size: 18px; margin-top: 80px; }
+.empathy .gap-lg { margin-bottom: 80px; }
+.empathy .conclusion { font-size: 19px; margin-top: 80px; }
 
 
 .story p, .process p, .urgency p { color: var(--ink-soft); font-size: 16px; }
@@ -202,6 +203,7 @@ section h2 {
 
 /* Generously-spaced narrative paragraphs (empathy + story) */
 .flow { margin-bottom: 40px; }
+.flow.text-lg { font-size: 18px; }
 
 /* Hero hook line above the review screenshots */
 .flow.lead-line {
@@ -229,6 +231,7 @@ section h2 {
 }
 .bubbles.bubbles-center { align-items: center; margin-bottom: 56px; }
 .bubbles.bubbles-center .bubble { text-align: center; }
+.bubbles.bubbles-gap { margin-bottom: 120px; }
 .bubble {
   background: #fee500;
   color: #000000;
@@ -237,25 +240,6 @@ section h2 {
   padding: 14px 18px;
   border-radius: 18px 18px 18px 4px;
   max-width: 92%;
-}
-
-/* Centered, eye-catching callout bubble */
-.bubble-highlight-wrap {
-  display: flex;
-  justify-content: center;
-  margin: 160px 0 40px;
-}
-.bubble-highlight {
-  background: var(--accent);
-  color: #fff;
-  font-weight: 800;
-  font-size: 17px;
-  text-align: center;
-  word-break: keep-all;
-  padding: 16px 20px;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(193, 84, 60, 0.28);
-  max-width: 100%;
 }
 
 /* Services */
