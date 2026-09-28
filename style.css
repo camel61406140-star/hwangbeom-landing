@@ -194,7 +194,7 @@ section h2 {
 .flow { margin-bottom: 40px; }
 .flow.text-lg { font-size: 18px; }
 .flow.gap-lg { margin-bottom: 80px; }
-.flow.mt-lg { margin-top: 120px; }
+.flow.mt-lg { margin-top: 80px; }
 .flow.mt-md { margin-top: 80px; }
 .flow.made-it-line {
   font-size: 24px;
@@ -564,7 +564,7 @@ section h2 {
   opacity: 0.55;
 }
 .urgency .emphasis-line {
-  margin-top: 120px;
+  margin-top: 80px;
   font-weight: 800;
   font-size: 18px;
   color: var(--accent-dark);
