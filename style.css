@@ -268,19 +268,14 @@ section h2 {
   font-size: 15px;
 }
 .service-card li { margin-bottom: 6px; }
-.service-split {
-  display: flex;
-  gap: 14px;
-  margin-bottom: 16px;
+.service-split { margin-bottom: 16px; }
+.service-split p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
 }
-.service-split > div {
-  flex: 1;
-  background: var(--bg-alt);
-  border-radius: 14px;
-  padding: 14px;
-}
-.service-split h4 { font-size: 15px; margin-bottom: 6px; color: var(--accent-dark); }
-.service-split p { font-size: 14px; margin: 0; color: var(--ink-soft); }
+.service-split p:last-child { margin-bottom: 0; }
+.service-split strong { color: var(--accent-dark); }
 .service-summary {
   font-size: 15px;
   font-weight: 700;
