@@ -634,11 +634,6 @@ section h2 {
   color: var(--ink);
   margin-top: -22px;
 }
-.flip-ended {
-  font-size: 21px;
-  font-weight: 800;
-  color: var(--accent-dark);
-}
 @keyframes flipPulse {
   0% { transform: scale(1); }
   40% { transform: scale(1.08); }
@@ -694,6 +689,36 @@ section h2 {
 .cta-secondary-note a {
   color: var(--ink-soft);
   text-decoration: underline;
+}
+
+/* Closed / sold-out full-page screen */
+.closed-screen {
+  display: none;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 40px 24px;
+  text-align: center;
+}
+.closed-box {
+  max-width: 420px;
+}
+.closed-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.closed-sub {
+  font-size: 17px;
+  color: var(--ink-soft);
+  margin: 0 0 48px;
+}
+.closed-note {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 28px;
 }
 
 /* Scroll-in reveal animations */

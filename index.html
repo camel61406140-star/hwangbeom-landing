@@ -39,6 +39,7 @@
 </head>
 <body>
 
+  <div id="main-content">
   <div class="badge-bar">재회가능성 진단을 받으신 분들에게만 전달되는 안내입니다</div>
 
   <header class="hero">
@@ -285,6 +286,16 @@
       <p class="cta-secondary-note reveal"><a href="https://bit.ly/4hn7pX3" target="_blank" rel="noopener">전체적인 재회 플랜과 상담이 필요하다면 → 정식 상담 안내</a></p>
     </div>
   </footer>
+  </div>
+
+  <div id="closed-screen" class="closed-screen">
+    <div class="closed-box">
+      <p class="closed-title">현재 모집이 마감되었습니다.</p>
+      <p class="closed-sub">추후 다시 오픈할 예정입니다.</p>
+      <p class="closed-note">오픈 알림을 받고 싶으신 분은<br>황범 카카오톡 채널톡방으로 신청 바랍니다.</p>
+      <a href="http://pf.kakao.com/_GxixoxlG/chat" class="cta-button" target="_blank" rel="noopener">카카오톡 채널 바로가기</a>
+    </div>
+  </div>
 
   <div id="lightbox" class="lightbox" onclick="closeLightbox()">
     <img id="lightbox-img" src="" alt="확대된 후기 이미지" />
@@ -308,12 +319,17 @@
     });
 
     (function () {
+      // 마감 시각을 바꾸면 자동으로 페이지가 다시 열립니다.
+      var deadline = new Date('2026-09-29T23:59:00+09:00').getTime();
+
+      var mainContent = document.getElementById('main-content');
+      var closedScreen = document.getElementById('closed-screen');
       var countdownEl = document.getElementById('countdown');
-      if (!countdownEl) return;
       var hoursEl = document.getElementById('cd-hours');
       var minutesEl = document.getElementById('cd-minutes');
       var secondsEl = document.getElementById('cd-seconds');
-      var deadline = new Date('2026-09-29T23:59:00+09:00').getTime();
+      if (!countdownEl) return;
+
       function pad(n) { return String(n).padStart(2, '0'); }
       function setDigit(el, value) {
         if (el.textContent === value) return;
@@ -322,13 +338,21 @@
         void el.offsetWidth;
         el.classList.add('flip-drop');
       }
+      function showClosed() {
+        if (mainContent) mainContent.style.display = 'none';
+        if (closedScreen) closedScreen.style.display = 'flex';
+      }
+      function showOpen() {
+        if (mainContent) mainContent.style.display = '';
+        if (closedScreen) closedScreen.style.display = 'none';
+      }
       function tick() {
         var diff = deadline - Date.now();
         if (diff <= 0) {
-          countdownEl.innerHTML = '<span class="flip-ended">마감되었습니다</span>';
-          clearInterval(timer);
+          showClosed();
           return;
         }
+        showOpen();
         var totalSeconds = Math.floor(diff / 1000);
         var hours = Math.floor(totalSeconds / 3600);
         var minutes = Math.floor((totalSeconds % 3600) / 60);
@@ -338,7 +362,7 @@
         setDigit(secondsEl, pad(seconds));
       }
       tick();
-      var timer = setInterval(tick, 1000);
+      setInterval(tick, 1000);
     })();
 
     var revealTargets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
