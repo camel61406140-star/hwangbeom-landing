@@ -573,7 +573,7 @@ section h2 {
   background: var(--card-bg);
   border: 2px solid var(--accent);
   border-radius: var(--radius);
-  padding: 28px 20px;
+  padding: 36px 24px;
   text-align: center;
   margin-top: 24px;
 }
@@ -586,12 +586,66 @@ section h2 {
 .limit {
   font-size: 17px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 .fine-print {
   font-size: 13px;
   color: var(--ink-soft);
   margin: 0;
+}
+
+/* Flip-clock style countdown */
+.flip-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.flip-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 72px;
+}
+.flip-value {
+  display: block;
+  background: var(--ink);
+  color: #fff;
+  font-size: 34px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  border-radius: 12px;
+  padding: 12px 0;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(44, 36, 34, 0.2);
+}
+.flip-value.flip-drop {
+  animation: flipDrop 0.45s ease;
+}
+.flip-label {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.flip-colon {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-top: -22px;
+}
+.flip-ended {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--accent-dark);
+}
+@keyframes flipDrop {
+  0% { transform: translateY(-14px); opacity: 0.3; }
+  60% { transform: translateY(4px); opacity: 1; }
+  100% { transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flip-value.flip-drop { animation: none; }
 }
 
 /* Final CTA */
