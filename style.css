@@ -231,7 +231,7 @@ section h2 {
 /* Hero counselor-intro paragraphs */
 .flow.bio-line { font-size: 18px; }
 .flow.bio-first { margin-top: 120px; }
-.flow.bio-last { margin-bottom: 160px; }
+.flow.bio-last { margin-bottom: 48px; }
 .accent-purple {
   color: var(--accent-purple);
   font-weight: 800;
@@ -246,7 +246,11 @@ section h2 {
   margin: 0 0 40px;
 }
 .bubbles.bubbles-center { align-items: center; }
-.bubbles.bubbles-center .bubble { text-align: center; }
+.bubbles.bubbles-center .bubble {
+  text-align: center;
+  background: #fee500;
+  color: #000000;
+}
 .bubble {
   background: var(--bg-alt);
   color: var(--ink);
