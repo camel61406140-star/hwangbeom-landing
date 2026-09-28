@@ -586,7 +586,14 @@ section h2 {
 .limit {
   font-size: 17px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 56px;
+}
+.limit-note {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 .fine-print {
   font-size: 13px;
