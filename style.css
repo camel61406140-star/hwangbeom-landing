@@ -190,17 +190,6 @@ section h2 {
   box-shadow: 0 8px 20px rgba(44, 36, 34, 0.12);
 }
 
-/* Heading + character laid out side by side (used at the end of .story) */
-.story-final {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 80px;
-  margin: 120px 0 8px;
-}
-.story-final .char-avatar { margin: 0; flex-shrink: 0; }
-.story-final h2 { text-align: center; margin: 0; }
-
 /* Generously-spaced narrative paragraphs (empathy + story) */
 .flow { margin-bottom: 40px; }
 .flow.text-lg { font-size: 18px; }
@@ -653,14 +642,6 @@ section h2 {
   .q-cards { flex-direction: row; }
   .q-card { flex: 0 1 260px; }
   section h2 { font-size: 28px; }
-
-  .story-final {
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    margin-left: 15%;
-  }
-  .story-final h2 { text-align: left; }
 
   .carousel-btn { display: block; }
   .carousel img { width: 46%; }
