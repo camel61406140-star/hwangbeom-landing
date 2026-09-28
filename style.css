@@ -620,7 +620,7 @@ section h2 {
   box-shadow: 0 4px 10px rgba(44, 36, 34, 0.2);
 }
 .flip-value.flip-drop {
-  animation: flipDrop 0.45s ease;
+  animation: flipPulse 0.3s ease;
 }
 .flip-label {
   margin-top: 8px;
@@ -639,10 +639,10 @@ section h2 {
   font-weight: 800;
   color: var(--accent-dark);
 }
-@keyframes flipDrop {
-  0% { transform: translateY(-14px); opacity: 0.3; }
-  60% { transform: translateY(4px); opacity: 1; }
-  100% { transform: translateY(0); }
+@keyframes flipPulse {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
 @media (prefers-reduced-motion: reduce) {
   .flip-value.flip-drop { animation: none; }
