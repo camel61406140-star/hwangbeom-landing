@@ -250,8 +250,8 @@
       <p class="flow emphasis-line">그래서 제가 제대로<br>분석할 수 있는 만큼만 받으려고 합니다.</p>
 
       <div class="urgency-box">
-        <p class="limit">매주 10명만 신청을 받습니다.</p>
-        <p class="fine-print">예정 인원이 차면<br>기간이 남아 있어도 신청을 마감합니다.</p>
+        <p class="limit">기한 내 최대 7명만 신청을 받습니다.</p>
+        <p class="deadline" id="countdown">00시간 00분 00초</p>
       </div>
     </div>
   </section>
@@ -291,6 +291,28 @@
     window.addEventListener('popstate', function () {
       document.getElementById('lightbox').classList.remove('open');
     });
+
+    (function () {
+      var countdownEl = document.getElementById('countdown');
+      if (!countdownEl) return;
+      var deadline = new Date('2026-09-29T23:59:00+09:00').getTime();
+      function pad(n) { return String(n).padStart(2, '0'); }
+      function tick() {
+        var diff = deadline - Date.now();
+        if (diff <= 0) {
+          countdownEl.textContent = '마감되었습니다';
+          clearInterval(timer);
+          return;
+        }
+        var totalSeconds = Math.floor(diff / 1000);
+        var hours = Math.floor(totalSeconds / 3600);
+        var minutes = Math.floor((totalSeconds % 3600) / 60);
+        var seconds = totalSeconds % 60;
+        countdownEl.textContent = pad(hours) + '시간 ' + pad(minutes) + '분 ' + pad(seconds) + '초';
+      }
+      tick();
+      var timer = setInterval(tick, 1000);
+    })();
 
     var revealTargets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
     if ('IntersectionObserver' in window) {
